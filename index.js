@@ -10,11 +10,11 @@ import { createSpinner } from "nanospinner";
 const USER = "Yash";
 
 async function welcomeUser() {
-  const rainbowGreetingText = chalkAnimation.glitch(`Hi, ${USER} \n`);
+  const glitchGreetingText = chalkAnimation.glitch(`Hi, ${USER} \n`);
   await new Promise((resolve) => {
     setTimeout(resolve, 2000);
   });
-  rainbowGreetingText.stop();
+  glitchGreetingText.stop();
 
   console.log(`
   ${chalk.bgBlue("Colonel is a node CLI app")}
